@@ -351,3 +351,11 @@ footer p {
     margin-bottom: 40px;
 }
 
+.home-link-amarelo {
+    color: rgba(243, 168, 7, 0.932) !important; /*!important é uma prioridade máxima*/
+}
+
+.home-link-amarelo:hover {
+    color: white !important;
+}
+
