@@ -29,7 +29,7 @@
 <!--cabeçalho-->
 
 <body class="body_servicos">
-    <header class="topo">
+   <header class="topo">
         <div class="header-container">
             <!-- Logo centralizada -->
             <img src="IMG/logo_4.png" title="Logo barbearia" class="logo" />
@@ -41,7 +41,9 @@
             </nav>
         </div>
     </header>
-    
+</body>
+
+<body>
     <!--Serviços-->
     <main>
         <section class="nossosProdutos">
@@ -74,7 +76,7 @@
                 <span class="preco">R$ 25,00</span>
             </div>
 
-            <div class="card":
+            <div class="card" :
                 onclick="abrirDetalhes('Sobrancelha + Pezinho', 'IMG/sobrancelha.png', 'Realce sua expressão e mantenha o visual sempre em dia com nosso combo de sobrancelha + pezinho! A sobrancelha é cuidadosamente desenhada para harmonizar com seu rosto, enquanto o pezinho recebe aquele acabamento caprichado que faz toda a diferença no corte. Tudo com precisão, higiene e atenção aos detalhes.')">
                 <img src="IMG/sobrancelha.png" alt="Produto 2">
                 <h2>Sobrancelha + Pezinho</h2>
@@ -83,61 +85,6 @@
             </div>
         </div>
     </main>
-
-<!-- Início do Slider de Serviços -->
-<style>
-  .slider-container {
-    width: 100%;
-    overflow-x: auto;
-    white-space: nowrap;
-    scroll-behavior: smooth;
-    padding: 20px 0;
-  }
-  .card {
-    display: inline-block;
-    width: 250px;
-    margin: 10px;
-    background: #f1f1f1;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-  }
-  .slider-buttons {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  .slider-buttons button {
-    padding: 10px 15px;
-    margin: 5px;
-    cursor: pointer;
-  }
-</style>
-
-<div class="slider-buttons">
-  <button onclick="scrollSlider(-1)">◀</button>
-  <button onclick="scrollSlider(1)">▶</button>
-</div>
-
-<div class="slider-container" id="slider">
-  <div class="card">Corte Masculino</div>
-  <div class="card">Barba</div>
-  <div class="card">Sobrancelha</div>
-  <div class="card">Hidratação</div>
-  <div class="card">Design de Barba</div>
-</div>
-
-<script>
-  function scrollSlider(direction) {
-    const slider = document.getElementById('slider');
-    const scrollAmount = 260;
-    slider.scrollBy({
-      left: scrollAmount * direction,
-      behavior: 'smooth'
-    });
-  }
-</script>
-<!-- Fim do Slider de Serviços -->
-
 </body>
 
 </html>
