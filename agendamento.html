@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="barbearia.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <title>Document</title>
 
 
@@ -17,23 +18,42 @@
 
     </script>
 </head>
-
-<body class="body_agendamento">
-    <header class="header_agendamento">
+    
+<body class="body_servicos">
+   <header class="topo">
         <div class="header-container">
-            <img src="IMG/logo_1.png" class="logo_agendamento" />
+            <!-- Logo centralizada -->
+            <img src="IMG/logo_1.png" title="Logo ROBULLST" class="logo_servicos" />
 
             <nav class="menu-principal">
                 <ul>
-                    <li><a href="index.html" class="home-link-amarelo">Home</a></li>
+                    <li><a href="index.html"><i class="fas fa-home"></i></a></li>
                 </ul>
             </nav>
         </div>
     </header>
-
-    <h2>Marque o Seu Horário</h2>
-
-
-    <p class ="p-agendamento">WhatsApp: <a href="https://wa.me/5511998770143"><i class="fa fa-whatsapp"></i></a> (11)99877-0143</a></p>
-
 </body>
+
+<body>
+    <main>
+        <div class="contatos_container">
+
+            <div class="contato_card" onclick="window.open('https://wa.me/5511996652988', '_blank')">
+                <h3><i class="fab fa-whatsapp"></i> WhatsApp</h3>
+                <p>(11) 99877-0143</p>
+                <p>Clique para conversar</p>
+            </div>
+
+            <div class="contato_card" onclick="window.open('https://www.google.com/maps/search/cep+Av.+Imperador+Pedro+II,+1430+-+Nova+Petr%C3%B3polis/@-23.7226322,-46.550211,13z?entry=ttu&g_ep=EgoyMDI1MDUyNy4wIKXMDSoASAFQAw%3D%3D', '_blank')">
+                <h3><i class="fa fa-map-marker"></i> Endereço</h3>
+                <p>Av. Imperador Pedro II, 1430 - Nova Petrópolis, 09770-420</p>
+                <p>São Bernardo do Campo - SP</p>
+            </div>
+
+        </div>
+    </main>
+
+   
+</body>
+
+</html>
