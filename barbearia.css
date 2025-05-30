@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: black;
+    background-color:  rgba(0, 0, 0, 0.932);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,14 +20,14 @@ body {
 
 /* Imagem centralizada */
 .img {
-    width: 90%;
+    width: 100%;
     display: block;
     margin: 0 auto;
 }
 
 /* Header sem margens */
 header {
-    background-color: rgba(243, 168, 7, 0.932);
+    background-color:rgb(0, 0, 0);
     width: 100%;
 }
 
@@ -66,7 +66,7 @@ header {
 }
 
 .menu-principal a {
-    color: black;
+    color:  rgba(243, 168, 7, 0.932);
     text-decoration: none;
     font-size: 25px;
     font-weight: bold;
@@ -101,8 +101,8 @@ header {
 
 .texto-sobre-nos {
     flex: 1;
-    color: rgba(243, 168, 7, 0.932);
-    border: 4px solid rgba(243, 168, 7, 0.932);
+    color: rgba(236, 236, 236, 0.932);
+    border: 4px solid rgba(243, 168, 7, 0.932);;
     /* cor e espessura do contorno */
     padding: 20px;
     /* espaço interno para o texto não encostar nas bordas */
@@ -129,7 +129,7 @@ header {
 /* Títulos */
 h2 {
     text-align: center;
-    color:  rgba(243, 168, 7, 0.932);
+    color:  rgba(241, 241, 241, 0.932);
     font-size: 35px;
     margin: 0px 0 20px;
 }
@@ -145,7 +145,7 @@ h2 {
 /*Promoções*/
 .promocoes {
     flex: 1;
-    color: rgba(243, 168, 7, 0.932);
+    color: rgba(241, 241, 241, 0.932);
     border: 4px solid rgba(243, 168, 7, 0.932);
     /* cor e espessura do contorno */
     padding: 20px;
@@ -216,7 +216,7 @@ h2 {
 
 /* Rodapé */
 footer {
-    background: rgba(243, 168, 7, 0.932);
+    background: rgba(0, 0, 0, 0.932);
     background-blend-mode: darken;
     padding: 30px 0 10px;
     width: 100%;
@@ -224,17 +224,13 @@ footer {
 }
 
 footer p {
-    color: rgba(0, 0, 0, 0.932);
-    ;
+    color: rgba(243, 168, 7, 0.932);
     font-weight: bold;
     font-size: 25px;
     font-family: sans-serif;
 }
 
 
-.fa {
-    color: rgba(0, 0, 0, 0.932);
-}
 
 /* Container dos cards */
 .container {
@@ -308,7 +304,7 @@ footer p {
     width: 100%;
     max-width: 200px;
     display: block; /* necessário para usar margin auto */
-    margin: 0 auto;        
+    margin: 0 auto;   
 }
 
 
@@ -352,7 +348,7 @@ footer p {
 }
 
 .home-link-amarelo {
-    color: rgba(243, 168, 7, 0.932) !important;
+    color: rgba(243, 168, 7, 0.932) !important; /*!important é uma prioridade máxima*/
 }
 
 .home-link-amarelo:hover {
@@ -361,4 +357,72 @@ footer p {
 
 .p-agendamento{
     font-size: 25px;
+}
+
+/*Containers Compre*/
+
+.contatos_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.contato_card {
+    background-color: #000000;
+    /* mesma cor escura usada no produto */
+    color: white;
+    border: 4px solid rgba(243, 168, 7, 0.932);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.contato_card:hover {
+    transform: scale(1.05);
+    background-color: #333333;
+    /* leve mudança na cor no hover */
+}
+
+.contato_card h3 {
+    margin-top: 0;
+    color:  rgba(243, 168, 7, 0.932);
+    /* destaque amarelo parecido */
+}
+
+.contato_card p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/*--Estilização dos icones do menu*/
+.fa-whatsapp{
+    color: rgba(243, 168, 7, 0.932);;
+}
+
+.fa-home{
+    color:  rgba(243, 168, 7, 0.932);
+}
+
+.fa-phone{
+    color:  rgba(243, 168, 7, 0.932);
+}
+
+.fa-scissors{
+    color: rgba(243, 168, 7, 0.932);
+}
+
+
+
+.fa-map-marker:before{
+    content: "\f232";
+    color:  rgba(243, 168, 7, 0.932);
+}
+
+.fa-instagram{
+    color: rgba(243, 168, 7, 0.932);
 }
