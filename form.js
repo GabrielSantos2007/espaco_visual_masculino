@@ -25,7 +25,7 @@ botaoEnviar.addEventListener("click", function(event){
         const botoesExtras = `
             <div style="margin-top: 30px;">
                 <button onclick="window.location.href='index.html'" class="btextra">Voltar para a Home</button>
-                <button onclick="window.location.href='servicos.html'" class="btextra" style="margin-left: 25px;">Ver Produtos</button>
+                <button onclick="window.location.href='servicos.html'" class="btextra" style="margin-left: 25px;">Ver Serviços </button>
             </div>
         `;
 
