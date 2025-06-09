@@ -13,7 +13,7 @@ botaoEnviar.addEventListener("click", function(event){
 
 
         //Monta o texto do retorno 
-        msgRetorno=form.sobrenome.value + ", agradecemos o seu contatos com a gente! <br><br>Vamos avaliar suas considerações e retornaremos o mais rápido possível."
+        msgRetorno="<span style='color: white;'>" + form.sobrenome.value + ", agradecemos o seu contatos com a gente! <br><br>Vamos avaliar suas considerações e retornaremos o mais rápido possível."
 
         //Abre a div de retorno
         document.getElementById("formRetorno").style.display="block";
