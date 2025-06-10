@@ -1,31 +1,29 @@
 <html>
 
 <head>
-    <title> Espaço Visual Masculino</title>
+    <title>Detalhes do Serviço | Espaço Visual Masculino</title>
+    <link rel="stylesheet" href="barbearia.css">
 </head>
 
-<body>
+<body class="body_servicos">
     <main>
-        <div>
-            <h1 id="nome-servico">
-                <h1>
-                    <img id="imagem-servico" src="" />
-                    <p id="descricao-servico">DESCRICAO </p>
-
-                    <!--Captura as informações do produto-->
-                    <script>
-                        function getParametro(dado) {
-                            const urlParams = new URLSearchParams(window.location.search);
-                            return urlParams.get(dado);
-                        }
-
-                        //Preenche na página as informações recebidas
-                        document.getElementById("nome-servico").textContent = getParametro("nome");
-                        document.getElementById("imagem-servico").src = getParametro("imagem");
-                        document.getElementById("descricao-servico").textContent = getParametro("descricao")
-                    </script>
+        <div class="card" style="margin-top: 50px;">
+            <h2 id="nome-servico" class="titulo-servico"></h2>
+            <img id="imagem-servico" src="" class="img-sobre-nos" />
+            <p id="descricao-servico" class="texto-sobre-nos"></p>
         </div>
     </main>
+
+    <script>
+        function getParametro(dado) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(dado);
+        }
+
+        document.getElementById("nome-servico").textContent = getParametro("nome");
+        document.getElementById("imagem-servico").src = getParametro("imagem");
+        document.getElementById("descricao-servico").textContent = getParametro("descricao");
+    </script>
 </body>
 
 </html>

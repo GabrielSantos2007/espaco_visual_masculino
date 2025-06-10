@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="barbearia.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-    <title>Document</title>
+    <link rel="icon" href="IMG/logo_1.png" type="image/png">
+    <title> Agendamento | Espaço Visual Masculino </title>
 
 
     <script>
@@ -23,7 +24,7 @@
    <header class="topo">
         <div class="header-container">
             <!-- Logo centralizada -->
-            <img src="IMG/logo_1.png" title="Logo ROBULLST" class="logo_servicos" />
+            <img src="IMG/logo_1.png" title="Logo" class="logo_servicos" />
 
             <nav class="menu-principal">
                 <ul>
@@ -41,7 +42,7 @@
             <div class="contato_card" onclick="window.open('https://wa.me/5511996652988', '_blank')">
                 <h3><i class="fab fa-whatsapp"></i> WhatsApp</h3>
                 <p>(11) 99877-0143</p>
-                <p>Clique para conversar</p>
+                <p>Clique para agendar</p>
             </div>
 
             <div class="contato_card" onclick="window.open('https://www.google.com/maps/search/cep+Av.+Imperador+Pedro+II,+1430+-+Nova+Petr%C3%B3polis/@-23.7226322,-46.550211,13z?entry=ttu&g_ep=EgoyMDI1MDUyNy4wIKXMDSoASAFQAw%3D%3D', '_blank')">
@@ -58,7 +59,7 @@
             <ul class="contatos-titulos">
                 <h1 class="contatos-item"
                     style="color:  rgba(243, 168, 7, 0.932); font-family: Tahoma; text-decoration: none; font-size: 200%; text-align: center; margin-top: 200px;">
-                    Contato</h1>
+                    Fale Conosco</h1>
             </ul>
         </div>
         <div id="formRetorno" class="divRetorno">
@@ -72,13 +73,13 @@
                     
                     <legend style="color:  rgba(243, 168, 7, 0.932); font-family: Tahoma;">Dados Pessoais</legend>
                     <label style="color: rgba(243, 168, 7, 0.932); font-family: Tahoma;">*Nome e Sobrenome</label>
-                    <input type="text" id="sobrenome" name="" class="input-padrao" required>
+                    <input type="text" id="sobrenome" name="Nome e Sobrenome" class="input-padrao" required>
 
                     <label style="color:  rgba(243, 168, 7, 0.932); font-family: Tahoma;">E-mail</label>
-                    <input type="text" id="email" name="" class="input-padrao" placeholder="seuemail@domínio.com">
+                    <input type="text" id="email" name="email" class="input-padrao" placeholder="seuemail@domínio.com">
 
                     <label style="color: rgba(243, 168, 7, 0.932); font-family: Tahoma;">Telefone</label>
-                    <input type="tel" id="telefone" name="" class="input-padrao" placeholder="(XX) XXXXX-XXXX">
+                    <input type="tel" id="telefone" name="Telefone" class="input-padrao" placeholder="(XX) XXXXX-XXXX">
 
                     <label style="color:  rgba(243, 168, 7, 0.932); font-family: Tahoma;">*Mensagem</label>
                     <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
@@ -103,8 +104,12 @@
                     <br>
                 </fieldset>
 
-                <label style="color:  rgba(243, 168, 7, 0.932); font-family: Tahoma;"><input type="checkbox" class="chk"> Gostaria de
-                    receber nossas novidades e atualizações por e-mail?</label>
+                <div style="text-align: center; margin: 20px 0;">
+                    <label style="color: rgba(243, 168, 7, 0.932); font-family: Tahoma;">
+                        <input type="checkbox" class="chk">
+                        Gostaria de receber nossas novidades e atualizações por e-mail?
+                    </label>
+                </div>
 
                 <input type="submit" id="enviar" value="Enviar" class="enviar">
             </form>
@@ -113,7 +118,11 @@
 
     <script src="form.js"></script>
 
-   
+    <footer class="footerservico">
+        <p><a href="https://wa.me/5511998770143"><i class="fab fa-whatsapp"></i></a> 
+            <a href="https://instagram.com/techrobo_"><i class="fab fa-instagram"></i></a>
+            </p>
+    </footer>
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Poppins';
     background-color:  rgba(0, 0, 0, 0.932);
     display: flex;
     flex-direction: column;
@@ -70,7 +70,6 @@ header {
     text-decoration: none;
     font-size: 25px;
     font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     transition: color 0.3s;
 }
 
@@ -83,7 +82,7 @@ header {
 .sobre_nos {
     display: flex;
     justify-content: center;
-    margin-top: 70px;
+    margin-top: 30px;
     font-family: "Rubik", serif;
 }
 
@@ -102,7 +101,7 @@ header {
 .texto-sobre-nos {
     flex: 1;
     color: rgba(236, 236, 236, 0.932);
-    border: 4px solid rgba(243, 168, 7, 0.932);;
+    border: 4px solid rgba(243, 168, 7, 0.932);
     /* cor e espessura do contorno */
     padding: 20px;
     /* espaço interno para o texto não encostar nas bordas */
@@ -122,6 +121,8 @@ header {
     max-width: 500px;
     width: 100%;
     height: auto;
+    border: 4px solid rgba(243, 168, 7, 0.932);
+    border-radius: 8px;
 }
 
 /* Títulos */
@@ -133,11 +134,11 @@ h2 {
 }
 
 /* Imagem da seção sobre nós */
-.img_sobrenos {
-    width: 15%;
+.img-sobre-nos {
+    width: 35%;
     float: none;
     display: block;
-    margin: 0 auto 20px;
+    margin: 0 auto 0px;
 }
 
 /*Promoções*/
@@ -226,9 +227,18 @@ footer p {
     font-family: sans-serif;
 }
 
+.footerservico{
+    background: rgba(0, 0, 0, 0.932);
+    background-blend-mode: darken;
+    padding: 30px 0 10px;
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+}
 
 
 /* Container dos cards */
+
 .container {
     display: flex;
     justify-content: center;
@@ -465,6 +475,9 @@ fieldset {
     transition: 1s all;
     cursor: pointer;
     justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .enviar:hover {
     background:  rgba(243, 168, 7, 0.932);
@@ -497,10 +510,9 @@ fieldset {
 }
 
 .btextra{
-    height: 10%;
-    width: 40%;
-    margin-bottom: 20px;
-    background:  rgba(243, 168, 7, 0.932);
+    height: auto;
+    width: 200px;
+    background: rgba(243, 168, 7, 0.932);
     color: rgba(0, 0, 0, 0.932);
     font-weight: bold;
     font-size: 20px;
@@ -509,6 +521,75 @@ fieldset {
     transition: 1s all;
     cursor: pointer;
     text-align: center;
-
 }
 
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-principal {
+        position: static;
+        transform: none;
+        margin-top: 10px;
+    }
+
+    .sobre-nos-card {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 10px;
+        align-items: center;
+    }
+
+    .img-sobre-nos {
+        max-width: 90%;
+    }
+
+    form, .form {
+        width: 95% !important;
+    }
+
+    .input-padrao {
+        width: 100% !important;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .contatos_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contato_card {
+        width: 90%;
+    }
+
+    .container4 {
+        flex-direction: column;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .quadrado4 {
+        width: 90%;
+        height: auto;
+    }
+
+    .btextra {
+        width: 90%;
+    }
+
+    .menu-principal ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    .menu-principal li {
+        display: inline-block;
+        margin: 10px;
+    }
+}
