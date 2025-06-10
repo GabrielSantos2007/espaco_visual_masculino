@@ -593,3 +593,32 @@ fieldset {
         margin: 10px;
     }
 }
+
+@media (max-width: 768px) {
+    form {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .input-padrao, textarea {
+        width: 100% !important;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+
+    fieldset {
+        padding: 10px;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .enviar, .btextra {
+        width: 90% !important;
+        display: block;
+        margin: 20px auto;
+    }
+
+    .divRetorno p {
+        padding: 0 10px;
+    }
+}
